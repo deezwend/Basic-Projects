@@ -182,8 +182,7 @@ class Podcast_Video_Player(QtWidgets.QMainWindow):
             else:
                 hata(message="An another video is already being downloaded.")
         t1 = th(target=DownloadVideo_thread)
-        t1.start()  
-        
+        t1.start()       
 #</podcast_video_player>
 
 
@@ -192,17 +191,3 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(argv)
     window = Podcast_Video_Player()
     exiting(app.exec_())
-
-"""
-<TODO>
-1) Önce program için bir arayüz yapacağım.//
-2) Arayüzün CSS'ini ayarlayacağım.//
-3) Arayüzdeki bağlantıları, fonksiyonları ayarlayacağım.//
-4) Sırasıyla bütün videoları oynatma özelliği ekleyeceğim.//
-5) Video oynatımı bittikten sonra oynatılan videoyu listeden silme özelliği ekleyeceğim.--
-6) İstediğim videoları bir veritabanına kaydedeceğim.//
-7) İstediğim zaman listeden bir video silebileceğim.//
-8) İstersem videoyu programın bulunduğu konuma indirme özelliği ekleyeceğim.--
-</TODO>
-"""
-
